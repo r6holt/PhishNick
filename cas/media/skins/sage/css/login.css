@@ -1,0 +1,434 @@
+.page-inner {
+  text-align: center;
+}
+.page-inner a {
+  color: #036228;
+}
+.clearfix:before,
+.clearfix:after {
+  content: "";
+  display: table;
+}
+.clearfix:after {
+  clear: both;
+}
+.clearfix {
+  *zoom: 1;
+}
+.borderBox {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.topSize {
+  font-size: 1em;
+  line-height: 1.4em;
+}
+/* ==========================
+Login Page
+========================== */
+html {
+  height: 100%;
+}
+input,
+button,
+select,
+textarea {
+  font-family: "Trebuchet MS", Tahoma, sans-serif;
+}
+body {
+  letter-spacing: 0.05em;
+  font-family: "Trebuchet MS", Tahoma, sans-serif;
+  height: 100%;
+  color: #575757;
+  background-color: #f6f6f6;
+}
+body #mainContainer {
+  width: 100%;
+  height: 100%;
+  min-height: 500px;
+  position: relative;
+  display: table;
+  overflow: hidden;
+}
+body #mainContainer header {
+  height: 40px;
+  top: 0;
+  width: 100%;
+  display: table-row;
+}
+body #mainContainer header #sidebarOpen {
+  display: none;
+}
+body #mainContainer header #top {
+  background-color: #036228;
+  height: 40px;
+  margin-bottom: 0;
+}
+body #mainContainer header #top .leftLinks {
+  float: left;
+  list-style: none;
+  margin: 0 30px;
+  padding: 0;
+}
+body #mainContainer header #top .leftLinks li {
+  display: inline-block;
+  margin-right: 15px;
+}
+body #mainContainer header #top .leftLinks li a {
+  color: #ffffff;
+  text-decoration: none;
+  text-shadow: none;
+}
+body #mainContainer header #top .leftLinks li a:hover,
+body #mainContainer header #top .leftLinks li a:focus {
+  text-decoration: underline;
+}
+body #mainContainer .mobile-header {
+  display: none;
+}
+body #mainContainer #bodyContainer {
+  display: table-row;
+}
+body #mainContainer #bodyContainer .page-inner {
+  display: table-cell;
+  vertical-align: middle;
+}
+body #mainContainer #loginContainer {
+  height: 100%;
+}
+body #mainContainer #loginContainer #loginLogo {
+  text-align: center;
+  margin-bottom: 20px;
+}
+body #mainContainer #loginContainer #loginLogo img {
+  height: 75px;
+}
+body #mainContainer #loginContainer #loginFormContainer {
+  text-align: center;
+  padding: 0 10px;
+  width: 400px;
+  margin: 0 auto;
+}
+body #mainContainer #loginContainer #loginFormContainer .uportal-text-error {
+  color: red;
+  margin: .5em 0 .8em 10px;
+  font-size: .8em;
+}
+body #mainContainer #loginContainer #loginFormContainer form {
+  *zoom: 1;
+  margin-bottom: 3px;
+  margin: 0 auto;
+}
+body #mainContainer #loginContainer #loginFormContainer form div.input-block {
+  *zoom: 1;
+  display: inline-block;
+  margin-left: 20px;
+  margin-top: 10px;
+}
+body #mainContainer #loginContainer #loginFormContainer form div.input-block label {
+  float: left;
+  clear: both;
+  color: #575757;
+  font-size: 0.875em;
+  line-height: 1.7em;
+  margin-bottom: 0;
+}
+body #mainContainer #loginContainer #loginFormContainer form div.input-block input {
+  float: left;
+  clear: both;
+  box-shadow: 0 0 4px #DEDEDE inset;
+  border: 1px solid #cccccc;
+  margin: 5px 0;
+  padding: 4px;
+  border-radius: 6px;
+}
+body #mainContainer #loginContainer #loginFormContainer form div.input-block input.error {
+  width: 150px;
+}
+body #mainContainer #loginContainer #loginFormContainer form div.input-block input:focus {
+  box-shadow: none;
+  border: 1px solid #cccccc;
+}
+body #mainContainer #loginContainer #loginFormContainer form div.input-block .help-block {
+  float: left;
+  clear: both;
+  font-size: 0.8em;
+  line-height: 2em;
+}
+body #mainContainer #loginContainer #loginFormContainer form div.input-block .help-block a {
+  color: #496e3a;
+  font-weight: 800;
+  font-size: 1.25em;
+  text-decoration: none;
+}
+body #mainContainer #loginContainer #loginFormContainer form div.input-block .help-block a:hover {
+  text-decoration: underline;
+}
+body #mainContainer #loginContainer #loginFormContainer form div.first-block {
+  margin-left: 0px;
+}
+body #mainContainer #loginContainer #loginFormContainer form .submit-block {
+  display: block;
+  clear: both;
+  margin-top: 10px;
+}
+body #mainContainer #loginContainer #loginFormContainer form .submit-block .btn-success {
+  background-color: #EBEBEB;
+  color: #575757;
+  background-image: none;
+  box-shadow: none;
+  text-shadow: none;
+  border: 1px solid #cccccc;
+  padding: 3.5px 9px;
+  border-radius: 6px;
+}
+body #mainContainer #loginContainer #mayday,
+body #mainContainer #loginContainer #unsupportedOS {
+  width: 92%;
+  margin: 15px auto 100px auto;
+  text-align: left;
+  background-color: transparent;
+  padding: 5px 10px;
+  display: none;
+}
+body #mainContainer #loginContainer #mayday h1,
+body #mainContainer #loginContainer #unsupportedOS h1 {
+  font-size: 1em;
+  line-height: 1em;
+  margin: 0 0 10px 0;
+  padding: 0 0 10px 0;
+  font-weight: normal;
+  color: #d9807c;
+  border-bottom: 1px solid #dddddd;
+}
+body #mainContainer #loginContainer #mayday .mayday-item,
+body #mainContainer #loginContainer #unsupportedOS .mayday-item {
+  text-align: left;
+  margin: 0;
+  padding: 8px 10px 6px 36px;
+  background-size: 24px;
+  background-repeat: no-repeat;
+  background-position: 6px 4px;
+  font-size: .95em;
+  line-height: 1.5em;
+}
+body #mainContainer #loginContainer #mayday .mayday-item.ERROR,
+body #mainContainer #loginContainer #unsupportedOS .mayday-item.ERROR {
+  background-image: url('../images/error-resized.png');
+}
+body #mainContainer #loginContainer #mayday .mayday-item.WARNING,
+body #mainContainer #loginContainer #unsupportedOS .mayday-item.WARNING {
+  background-image: url('../images/warning.png');
+}
+body #mainContainer #loginContainer #mayday .mayday-item.SUCCESS,
+body #mainContainer #loginContainer #unsupportedOS .mayday-item.SUCCESS {
+  background-image: url('../images/success.png');
+}
+body #mainContainer #loginContainer #mayday .mayday-item.INFO,
+body #mainContainer #loginContainer #unsupportedOS .mayday-item.INFO {
+  background-image: url('../images/information.png');
+}
+body #mainContainer #loginContainer #mayday .mayday-item:hover,
+body #mainContainer #loginContainer #unsupportedOS .mayday-item:hover {
+  background-color: #ffffff;
+}
+body #mainContainer #loginContainer #mayday .mayday-item .title,
+body #mainContainer #loginContainer #unsupportedOS .mayday-item .title {
+  cursor: pointer;
+  width: 100%;
+  display: inline-block;
+  background-image: url('');
+  background-color: transparent;
+  padding-right: 24px;
+  margin-bottom: 6px;
+  background-position: right top;
+}
+body #mainContainer #loginContainer #mayday .mayday-item .title h2,
+body #mainContainer #loginContainer #unsupportedOS .mayday-item .title h2 {
+  font-size: 1.1em;
+  line-height: 1em;
+  font-weight: bold;
+  margin: 0;
+  padding: 0;
+}
+body #mainContainer #loginContainer #mayday .mayday-item .title span,
+body #mainContainer #loginContainer #unsupportedOS .mayday-item .title span {
+  font-size: 0.75em;
+  line-height: 1em;
+  font-style: italic;
+  color: #8f8f8f;
+}
+body #mainContainer #loginContainer #mayday .mayday-item p,
+body #mainContainer #loginContainer #unsupportedOS .mayday-item p {
+  margin: 0;
+  padding: 0;
+}
+body #mainContainer #loginContainer #mayday .mayday-item a,
+body #mainContainer #loginContainer #unsupportedOS .mayday-item a {
+  color: #008000;
+}
+body #mainContainer #loginContainer #mayday .mayday-item .more-info,
+body #mainContainer #loginContainer #unsupportedOS .mayday-item .more-info {
+  display: inline-block;
+}
+body #mainContainer #loginContainer #mayday .mayday-item .abstract,
+body #mainContainer #loginContainer #unsupportedOS .mayday-item .abstract {
+  display: none;
+}
+body #mainContainer #loginContainer #mayday .mayday-item .description,
+body #mainContainer #loginContainer #unsupportedOS .mayday-item .description {
+  display: block;
+}
+body #mainContainer #loginContainer #mayday .mayday-item.closed .abstract,
+body #mainContainer #loginContainer #unsupportedOS .mayday-item.closed .abstract {
+  display: block;
+}
+body #mainContainer #loginContainer #mayday .mayday-item.closed .description,
+body #mainContainer #loginContainer #unsupportedOS .mayday-item.closed .description {
+  display: none;
+}
+body #mainContainer #loginContainer #mayday .mayday-item.closed .more-info,
+body #mainContainer #loginContainer #unsupportedOS .mayday-item.closed .more-info {
+  display: none;
+}
+body #mainContainer footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+  left: 0;
+}
+body #mainContainer footer a {
+  color: #737373;
+  line-height: 2.7em;
+}
+@media only screen and (min-device-width: 768px) and (max-device-width: 1000px) {
+  body {
+    font-size: 18px;
+  }
+}
+@media only screen and (max-device-width: 768px) {
+  body {
+    height: 100%;
+    width: 100%;
+  }
+  body #mainContainer {
+    width: 100%;
+    height: 100%;
+    margin-top: 0;
+    -webkit-transition-duration: 0.3s;
+    -moz-transition-duration: 0.3s;
+    -o-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    z-index: 100;
+    display: block;
+  }
+  body #mainContainer header {
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+  }
+  body #mainContainer header #top {
+    height: 100%;
+  }
+  body #mainContainer header #top .leftLinks {
+    margin: 0;
+    height: 100%;
+    width: 100%;
+  }
+  body #mainContainer header #top .leftLinks li {
+    display: block;
+    width: 100%;
+    margin-right: 15px;
+    float: left;
+    clear: both;
+    border-bottom: 1px solid white;
+  }
+  body #mainContainer header #top .pull-right {
+    display: none;
+  }
+  body #mainContainer .mobile-header {
+    display: block;
+    padding: 8px 5px;
+    position: absolute;
+  }
+  body #mainContainer .mobile-header .sidebtn {
+    width: 26px;
+    text-align: center;
+    padding: 4px 7px;
+  }
+  body #mainContainer .mobile-header .sidebtn button#leftSidebarOpen {
+    display: inline;
+    width: 20px;
+    height: 20px;
+    border: none;
+    padding: 0px;
+  }
+  body #mainContainer .mobile-header .sidebtn button#leftSidebarOpen img {
+    vertical-align: top;
+    width: 20px;
+    height: 20px;
+  }
+  body #mainContainer #bodyContainer {
+    position: absolute;
+    display: table;
+    width: 100%;
+    height: 100%;
+    background-color: #f6f6f6;
+  }
+  body #mainContainer #loginContainer {
+    width: 100%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    height: 300px;
+    text-align: center;
+  }
+  body #mainContainer #loginContainer #loginLogo {
+    margin-bottom: 15px;
+  }
+  body #mainContainer #loginContainer #loginLogo img {
+    height: 60px;
+    margin: 0;
+  }
+  body #mainContainer #loginContainer #loginFormContainer {
+    width: 100%;
+    padding: 0 0 15px;
+  }
+  body #mainContainer #loginContainer #loginFormContainer form div.input-block {
+    *zoom: 1;
+    display: inline-block;
+    margin: 0 10px;
+  }
+  body #mainContainer #loginContainer #loginFormContainer form div.input-block .help-block {
+    margin-bottom: 7px;
+  }
+  body footer {
+    left: 0;
+    width: 170px;
+    text-align: left;
+    z-index: 0;
+    display: none;
+  }
+  body footer #loginLinks a {
+    display: block;
+    color: #fff;
+    line-height: 1.1em;
+    padding: 10px 15px 10px;
+    border-top: 1px solid #FFF;
+  }
+  body footer #loginLinks i {
+    display: none;
+  }
+}
+.slideRight {
+  left: 165px;
+}
+.slideLeft {
+  left: 0;
+}
+.client-logout div.portlet-toolbar, .client-logout div.uportal-portlet-content-wrapper {
+  text-align: center;
+}
