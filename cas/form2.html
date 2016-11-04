@@ -1,31 +1,24 @@
 <!DOCTYPE html>
 <html>
 <head>
-
-<!-- your webpage info goes here -->
-
     <title>Nick, Nick, Nick...</title>
-
-	<meta name="author" content="your name" />
-	<meta name="description" content="" />
-
-<!-- you should always add your stylesheet (css) in the head tag so that it starts loading before the page html is being displayed -->
-	<link rel="stylesheet" href="style.css" type="text/css" />
-
 </head>
 <body>
-<img src="creepy.jpeg";
-<!-- webpage content goes here in the body -->
+  <!--BACKGROUND IMAGE-->
+    <div id = "backgroundImage">
+      <img src="creepy.jpeg" width="100%">;
+    </div>
 
-			<script>
-			function butt(){
-				confirm("You sure bout that Nicholas");
-					number = Math.random();
-					location.replace("form1.html?a="+number);
-				}
-			butt();
-
-			//document.onunload(window.open("http://www.rd.com/wp-content/uploads/sites/2/2016/04/01-cat-wants-to-tell-you-laptop.jpg"));
-						</script>
+  <!--SWITCHING BETWEEN PAGES-->
+    <div id = "switchingPages">
+      <script>
+        function butt(){
+          confirm("You sure bout that Nicholas");
+            number = Math.random();
+            location.replace("form1.html");
+          };
+        butt();
+      </script>
+    </div>
 	</body>
 </html>
