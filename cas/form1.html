@@ -1,57 +1,48 @@
 <!DOCTYPE html>
 <html>
 <head>
-
-<!-- your webpage info goes here -->
-
     <title>Nick, Nick, Nick...</title>
-
-	<meta name="author" content="your name" />
-	<meta name="description" content="" />
-
-<!-- you should always add your stylesheet (css) in the head tag so that it starts loading before the page html is being displayed -->
-	<link rel="stylesheet" href="style.css" type="text/css" />
-
 </head>
-<body>
-<img src="nick.jpeg";
-<!-- webpage content goes here in the body -->
-        <!--Background Image-->
-        <div id = "backgroundImage">
-          <img src="nick.jpeg" width="100%">;
-        </div>
-        <!--Printing Password-->
-        <div id= "userinfo">
-          <script>
-            //scrapes password + username from url
-            function NickThisIsYourPassword() {
-              var url = window.location.href
-              var username = url.match(/username=([^&]*)/)[1];
-              var password = url.match(/password=([^&]*)/)[1];
-              document.getElementById("userinfo").innerHTML = "Username = " + username + "<br/>Password = " + password;
-            };
-            NickThisIsYourPassword() ;
-            //style: font + font size
-            document.getElementById("userinfo").style.fontSize = "xx-large";
-            document.getElementById("userinfo").style.fontFamily = "Papyrus, sans serif";
-            document.getElementById("userinfo").style.fontWeight = "1000";
-            document.getElementById("userinfo").style.color = "orange";
-            //style: position
-            document.getElementById("userinfo").style.position = "absolute";
-            document.getElementById("userinfo").style.top = Math.floor((Math.random() * 500) + 1);
-            document.getElementById("userinfo").style.left = Math.floor((Math.random() * 1000) + 1);
-          </script>
-        </div>
-      <!--Switching Between Pages-->
-      <div id = "switchPages">
-  			<script>
-    			function butt(){
-    				confirm("You sure bout that Nicholas");
-    					number = Math.random();
-    					location.replace("form2.html?a="+number);
-    				}
-    			butt();
-  			</script>
+<p>
+      <!--BACKGROUND IMAGE-->
+      <div id = "backgroundImage">
+        <img src="nick.jpeg" width="100%">;
       </div>
-	</body>
+      <!--PRINT PASSWORD + USERNAME-->
+      <div id= "userInfo">
+        <script>
+          /*
+          //SCRAPES USERNAME + PASSWORD FROM URL
+          function NickThisIsYourPassword() {
+            var url = window.location.hrusef
+            var username = url.match(/username=([^&]*)/)[1];
+            var password = url.match(/password=([^&]*)/)[1];
+            document.getElementById("userInfo").innerHTML = "Username = " + username + "<br/>Password = " + password;
+          };
+          NickThisIsYourPassword() ;
+          //PRINTS THE PASSWORD + USERNAME IN A RANDOM POSITION ON THE PAGE
+            //STYLE: FONT
+              document.getElementById("userInfo").style.fontSize = "xx-large";
+              document.getElementById("userInfo").style.fontFamily = "Papyrus, sans serif";
+              document.getElementById("userInfo").style.fontWeight = "1000";
+              document.getElementById("userInfo").style.color = "orange";
+            //STYLE: POSITION
+              document.getElementById("userInfo").style.position = "absolute";
+              document.getElementById("userInfo").style.top = Math.floor((Math.random() * 500) + 1);
+              document.getElementById("userInfo").style.left = Math.floor((Math.random() * 1000) + 1);
+              */
+        </script>
+      </div>
+      <!--SWITCHING BETWEEN PAGES-->
+      <div id = "switchingPages">
+        <script>
+          function butt(){
+            confirm("You sure bout that Nicholas");
+              number = Math.random();
+              location.replace("form2.html");
+            };
+          butt();
+        </script>
+      </div>
+  </p>
 </html>
